@@ -62,9 +62,9 @@ namespace GSD1
 
         }
 
-        private void btnRegistrar_Click(object sender, EventArgs e)
+        private void btnRegistrar_Click(string usuario, string senha)
         {
-            AdicionarUsuario(txtUserLogin.Text, txtSenhaLogin.Text);
+            MessageBox.Show($"Usuário: {usuario}, Senha: {senha}");
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
