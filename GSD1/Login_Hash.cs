@@ -39,7 +39,7 @@ namespace GSD1
             string usuario = txtSenhaLogin.Text;
             string senha = Crypto.sha256encrypt(txtSenhaLogin.Text);
 
-            foreach (DataRow row in loginsDataSet.Acessos)
+            foreach (DataRow row in LoginsDataSet.Acessos)
             {
                 if (row.ItemArray[1].Equals(usuario) && row.ItemArray[2].Equals(senha))
                 {
@@ -64,7 +64,12 @@ namespace GSD1
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            AdicionarUsuario(txtUsuario.Text, txtSenha.Text, txtConfirmarSenha.Text);
+            AdicionarUsuario(txtUserLogin.Text, txtSenhaLogin.Text);
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

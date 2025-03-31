@@ -37,16 +37,16 @@
             pictureBox1 = new PictureBox();
             btnLogin = new Button();
             tabPage2 = new TabPage();
+            pictureBox2 = new PictureBox();
+            btnRegistrar = new Button();
+            txtUsuario = new TextBox();
+            txtSenha = new TextBox();
+            lblSenhaRegistro = new Label();
+            lblUsuarioRegistro = new Label();
             lblConfirmarRegistro = new Label();
             txtConfirmarSenha = new TextBox();
             tabPage3 = new TabPage();
             tabPage4 = new TabPage();
-            lblUsuarioRegistro = new Label();
-            lblSenhaRegistro = new Label();
-            txtSenha = new TextBox();
-            txtUsuario = new TextBox();
-            btnRegistrar = new Button();
-            pictureBox2 = new PictureBox();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -116,6 +116,7 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Login";
             tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.Click += tabPage1_Click;
             // 
             // pictureBox1
             // 
@@ -153,6 +154,57 @@
             tabPage2.Text = "Registro";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Location = new Point(461, 74);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(100, 161);
+            pictureBox2.TabIndex = 11;
+            pictureBox2.TabStop = false;
+            // 
+            // btnRegistrar
+            // 
+            btnRegistrar.Location = new Point(306, 329);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(75, 23);
+            btnRegistrar.TabIndex = 10;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
+            // 
+            // txtUsuario
+            // 
+            txtUsuario.Location = new Point(197, 96);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(100, 23);
+            txtUsuario.TabIndex = 9;
+            txtUsuario.TextChanged += textBox2_TextChanged;
+            // 
+            // txtSenha
+            // 
+            txtSenha.Location = new Point(197, 135);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(100, 23);
+            txtSenha.TabIndex = 8;
+            // 
+            // lblSenhaRegistro
+            // 
+            lblSenhaRegistro.AutoSize = true;
+            lblSenhaRegistro.Location = new Point(60, 143);
+            lblSenhaRegistro.Name = "lblSenhaRegistro";
+            lblSenhaRegistro.Size = new Size(39, 15);
+            lblSenhaRegistro.TabIndex = 7;
+            lblSenhaRegistro.Text = "Senha";
+            // 
+            // lblUsuarioRegistro
+            // 
+            lblUsuarioRegistro.AutoSize = true;
+            lblUsuarioRegistro.Location = new Point(60, 104);
+            lblUsuarioRegistro.Name = "lblUsuarioRegistro";
+            lblUsuarioRegistro.Size = new Size(47, 15);
+            lblUsuarioRegistro.TabIndex = 6;
+            lblUsuarioRegistro.Text = "Usuário";
+            // 
             // lblConfirmarRegistro
             // 
             lblConfirmarRegistro.AutoSize = true;
@@ -187,57 +239,6 @@
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Configuração";
             tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // lblUsuarioRegistro
-            // 
-            lblUsuarioRegistro.AutoSize = true;
-            lblUsuarioRegistro.Location = new Point(60, 104);
-            lblUsuarioRegistro.Name = "lblUsuarioRegistro";
-            lblUsuarioRegistro.Size = new Size(47, 15);
-            lblUsuarioRegistro.TabIndex = 6;
-            lblUsuarioRegistro.Text = "Usuário";
-            // 
-            // lblSenhaRegistro
-            // 
-            lblSenhaRegistro.AutoSize = true;
-            lblSenhaRegistro.Location = new Point(60, 143);
-            lblSenhaRegistro.Name = "lblSenhaRegistro";
-            lblSenhaRegistro.Size = new Size(39, 15);
-            lblSenhaRegistro.TabIndex = 7;
-            lblSenhaRegistro.Text = "Senha";
-            // 
-            // txtSenha
-            // 
-            txtSenha.Location = new Point(197, 135);
-            txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(100, 23);
-            txtSenha.TabIndex = 8;
-            // 
-            // txtUsuario
-            // 
-            txtUsuario.Location = new Point(197, 96);
-            txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(100, 23);
-            txtUsuario.TabIndex = 9;
-            txtUsuario.TextChanged += textBox2_TextChanged;
-            // 
-            // btnRegistrar
-            // 
-            btnRegistrar.Location = new Point(306, 329);
-            btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(75, 23);
-            btnRegistrar.TabIndex = 10;
-            btnRegistrar.Text = "Registrar";
-            btnRegistrar.UseVisualStyleBackColor = true;
-            btnRegistrar.Click += btnRegistrar_Click;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(461, 74);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 161);
-            pictureBox2.TabIndex = 11;
-            pictureBox2.TabStop = false;
             // 
             // Form1
             // 
